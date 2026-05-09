@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-tint": "#006a6a", "on-surface": "#171d1d", "on-error-container": "#93000a", "primary-fixed-dim": "#56d9d9", "on-surface-variant": "#3c4949", error: "#ba1a1a", "outline-variant": "#bbc9c8", primary: "#006a6a", "on-tertiary": "#ffffff", background: "#f5fbfa", "on-tertiary-fixed-variant": "#753400", "inverse-surface": "#2b3231", "on-background": "#171d1d", "surface-dim": "#d5dbda", "on-primary-fixed": "#002020", secondary: "#3a6665", "surface-variant": "#dee4e3", "on-secondary-container": "#406c6b", tertiary: "#944a14", "on-secondary-fixed": "#002020", "secondary-fixed": "#bdebea", "on-primary-container": "#005151", "on-tertiary-fixed": "#321200", "error-container": "#ffdad6", "primary-container": "#41c9c9", "on-error": "#ffffff", "inverse-on-surface": "#ecf2f1", "secondary-fixed-dim": "#a2cfce", "surface-container-highest": "#dee4e3", "tertiary-fixed": "#ffdbc9", surface: "#f5fbfa", "on-primary-fixed-variant": "#004f50", "surface-container": "#e9efee", "on-secondary": "#ffffff", "on-tertiary-container": "#763500", "surface-bright": "#f5fbfa", "on-secondary-fixed-variant": "#214d4d", "surface-container-low": "#eff5f4", outline: "#6c7a79", "on-primary": "#ffffff", "secondary-container": "#bdebea", "primary-fixed": "#76f6f6", "inverse-primary": "#56d9d9", "surface-container-high": "#e3e9e8", "tertiary-fixed-dim": "#ffb68b", "tertiary-container": "#ff9f63", "surface-container-lowest": "#ffffff"}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}, fontFamily: {headline: ["Newsreader"], body: ["Inter"], label: ["Inter"], display: "Newsreader"}}}};</script>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-tint": "#006a6a", "on-surface": "#171d1d", "on-error-container": "#93000a", "primary-fixed-dim": "#004d51", "primary-fixed": "#a4f1f1", "on-primary-fixed": "#00201f", "on-primary-fixed-variant": "#003d3d", "secondary-fixed-dim": "#184647", "secondary-fixed": "#a4eff3", "on-secondary-fixed": "#001819", "on-secondary-fixed-variant": "#0a3f43", "tertiary-fixed-dim": "#2c4454", "tertiary-fixed": "#b3ccde", "on-tertiary-fixed": "#051822", "on-tertiary-fixed-variant": "#1f3645", "error-fixed-dim": "#8b0000", "error-fixed": "#ffb4ab", "on-error-fixed": "#690005", "on-error-fixed-variant": "#93000a", "outline": "#6f7978", "outline-variant": "#4f5958", "scrim": "#000000", "surface": "#f5fbfa", "on-surface-variant": "#3f4948", "inverse-surface": "#2a3232", "inverse-on-surface": "#eff1f0", "primary": "#004d51", "on-primary": "#ffffff", "primary-container": "#a4f1f1", "on-primary-container": "#00201f", "secondary": "#305f62", "on-secondary": "#ffffff", "secondary-container": "#b5e7eb", "on-secondary-container": "#051e22", "tertiary": "#4a5f6f", "on-tertiary": "#ffffff", "tertiary-container": "#cce4f7", "on-tertiary-container": "#071f2e", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff1f0", "surface-container": "#e9eceb", "surface-container-high": "#e3e6e5", "surface-container-highest": "#dde0df", "surface-dim": "#d8dbda", "error": "#b3261e", "on-error": "#ffffff", "error-container": "#f9dedc", "on-error-container": "#410e0b"}}}}</script>
 <style>
         body { background-color: #adb5bd; } /* Neutral base from guidelines */
         .glass-panel { background: rgba(246, 250, 255, 0.95); backdrop-filter: blur(12px); }
@@ -30,11 +30,10 @@
 <div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="text-2xl font-serif italic font-medium text-teal-900 dark:text-teal-500 font-headline">Science, In Brief</div>
 <nav class="hidden md:flex gap-8 items-center">
-<a class="text-teal-900 dark:text-teal-300 border-b-2 border-teal-900 dark:border-teal-300 pb-1 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="index.html">Home</a>
-<a class="text-slate-600 dark:text-slate-400 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="proteindj.html">Latest Notes</a>
+<a class="text-teal-900 dark:text-teal-300 border-b-2 border-teal-900 dark:border-teal-300 pb-1 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="index.html#latest">Latest</a>
 <a class="text-slate-600 dark:text-slate-400 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="about.html#topics">Topics</a>
 <a class="text-slate-600 dark:text-slate-400 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="about.html">About</a>
-<a class="text-slate-600 dark:text-slate-400 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="editor.html">Meet the Founder</a>
 <a class="text-slate-600 dark:text-slate-400 font-sans uppercase tracking-widest text-[11px] hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="#contact">Contact</a>
 </nav>
 <div class="flex items-center gap-4">
@@ -63,7 +62,7 @@ A modern biotech and science platform translating peer-reviewed research into co
 <a href="#newsletter" class="text-secondary hover:text-primary transition-colors font-label text-lg uppercase tracking-wider">Subscribe</a>
 </div>
 <div class="w-full max-w-3xl mx-auto">
-<img alt="Abstract scientific illustration of molecular structures" class="w-full h-auto rounded-lg shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFF_ZlZRupZ3tpZOGzo4gryfX7o7t8eV0U5xNVTIM8KFIcQD4TS8udyJfBvLMVfcIJGtVj5d0iq-IWFJQkszAvO6Y2O5TP9GmKhASY86l4S-fG7XdTOvVtp8FtIibEYwmZf7ljXEY-HpUxYaMGLZNs5hwnuwiWYwhg0oXqX1KMZ2ToO2U5FOBWn-z2tg4Zt21NvAgvAWq-A_1_lB_WESduC9M9cWli6MkirNJySNSSPwa_0L2HcS8vbFIN4GlzIk_4zhUU-XX1Cls"/>
+<img alt="Abstract scientific illustration of molecular structures" class="w-full h-auto rounded-lg shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFF_ZlZRupZ3tpZOGzo4gryfX7o7t8eV5BZvlh-fKPlVp6rJMFG8l3G2b-HPhEZv5_m2cj_rLT9Rp6rQpQ_D7WfE_KIEUiZRf98Fk=s256" style="max-height:300px"/>
 </div>
 </div>
 </section>
@@ -74,19 +73,18 @@ A modern biotech and science platform translating peer-reviewed research into co
 <h2 class="font-headline text-3xl text-primary mb-8 text-center">Featured Brief</h2>
 <div class="bg-surface-container rounded-xl p-8 md:p-12 shadow-lg">
 <div class="flex items-center gap-3 mb-6">
-<span class="font-label text-xs tracking-[0.05em] text-primary uppercase">Bioinformatics</span>
+<span class="font-label text-xs tracking-[0.05em] text-primary uppercase">Molecular Biology</span>
 <span class="text-outline text-sm">•</span>
-<span class="font-label text-xs tracking-[0.05em] text-on-surface-variant">5 min read</span>
+<span class="font-label text-xs tracking-[0.05em] text-on-surface-variant">6 min read</span>
 </div>
-<h3 class="font-headline text-4xl text-primary leading-tight mb-6">ProteinDJ: Scaling protein design with HPC pipelines</h3>
+<h3 class="font-headline text-4xl text-primary leading-tight mb-6">Disordered Protein LAT Encodes the Balance of Signaling Pathways in T Cell Activation</h3>
 <p class="font-body text-xl text-secondary leading-relaxed mb-8">
-A modular HPC workflow brings speed and structure to AI-driven protein design, helping researchers generate and evaluate protein binders more efficiently.
+A large-scale single-cell mutational screen reveals that the disordered adapter protein LAT encodes T cell signaling balance through distributed functional sequence elements.
 </p>
 <figure class="mb-8 w-full overflow-hidden rounded-lg ghost-border ambient-shadow">
-<img alt="Abstract visualization of molecular structures and computational grids" class="w-full h-auto object-cover aspect-video" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFF_ZlZRupZ3tpZOGzo4gryfX7o7t8eV0U5xNVTIM8KFIcQD4TS8udyJfBvLMVfcIJGtVj5d0iq-IWFJQkszAvO6Y2O5TP9GmKhASY86l4S-fG7XdTOvVtp8FtIibEYwmZf7ljXEY-HpUxYaMGLZNs5hwnuwiWYwhg0oXqX1KMZ2ToO2U5FOBWn-z2tg4Zt21NvAgvAWq-A_1_lB_WESduC9M9cWli6MkirNJySNSSPwa_0L2HcS8vbFIN4GlzIk_4zhUU-XX1Cls"/>
-<figcaption class="font-label text-xs text-on-surface-variant p-4 bg-surface-container-lowest ghost-border border-t border-b-0 border-l-0 border-r-0">Visualization of parallel processing in molecular design.</figcaption>
+<img alt="Abstract editorial illustration of T cells with surface receptors and signal particles" class="w-full h-auto object-cover aspect-video" src="tcell_dual_editorial_art.svg" style="max-height:300px"/>
 </figure>
-<a href="proteindj.html" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label text-lg uppercase tracking-wider hover:bg-primary-container transition-colors inline-flex items-center gap-2">
+<a href="lat-tcell.html" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label text-lg uppercase tracking-wider hover:bg-primary-container transition-colors inline-flex items-center gap-2">
 Read Brief
 <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
@@ -101,6 +99,18 @@ Read Brief
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- Card 1 -->
 <div class="bg-surface-container rounded-xl p-6 shadow-lg">
+<span class="font-label text-xs tracking-[0.05em] text-primary uppercase mb-3 block">Bioinformatics</span>
+<h3 class="font-headline text-xl text-primary leading-tight mb-4">ProteinDJ: Scaling protein design with HPC pipelines</h3>
+<p class="font-body text-sm text-secondary leading-relaxed mb-6">
+A modular HPC workflow brings speed and structure to AI-driven protein design, helping researchers generate and evaluate protein binders more efficiently.
+</p>
+<div class="flex items-center justify-between">
+<span class="font-label text-xs text-on-surface-variant">5 min read</span>
+<a href="proteindj.html" class="text-primary hover:text-primary-container transition-colors font-label text-sm uppercase tracking-wider">Read Brief</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container rounded-xl p-6 shadow-lg">
 <span class="font-label text-xs tracking-[0.05em] text-primary uppercase mb-3 block">Microbiology</span>
 <h3 class="font-headline text-xl text-primary leading-tight mb-4">Engineering microbial systems for smarter bioproduction</h3>
 <p class="font-body text-sm text-secondary leading-relaxed mb-6">
@@ -108,10 +118,10 @@ A brief look at how new microbial design strategies are improving efficiency and
 </p>
 <div class="flex items-center justify-between">
 <span class="font-label text-xs text-on-surface-variant">4 min read</span>
-<a href="proteindj.html" class="text-primary hover:text-primary-container transition-colors font-label text-sm uppercase tracking-wider">Read Brief</a>
+<a href="#" class="text-primary hover:text-primary-container transition-colors font-label text-sm uppercase tracking-wider">Read Brief</a>
 </div>
 </div>
-<!-- Card 2 -->
+<!-- Card 3 -->
 <div class="bg-surface-container rounded-xl p-6 shadow-lg">
 <span class="font-label text-xs tracking-[0.05em] text-primary uppercase mb-3 block">Biotechnology</span>
 <h3 class="font-headline text-xl text-primary leading-tight mb-4">New tools for protein design and screening</h3>
@@ -120,19 +130,7 @@ Recent computational workflows are helping reduce bottlenecks in protein enginee
 </p>
 <div class="flex items-center justify-between">
 <span class="font-label text-xs text-on-surface-variant">5 min read</span>
-<a href="proteindj.html" class="text-primary hover:text-primary-container transition-colors font-label text-sm uppercase tracking-wider">Read Brief</a>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container rounded-xl p-6 shadow-lg">
-<span class="font-label text-xs tracking-[0.05em] text-primary uppercase mb-3 block">Molecular Biology</span>
-<h3 class="font-headline text-xl text-primary leading-tight mb-4">From sequence to function: interpreting modern biological datasets</h3>
-<p class="font-body text-sm text-secondary leading-relaxed mb-6">
-How new analytical approaches are making complex biological data more actionable and easier to understand.
-</p>
-<div class="flex items-center justify-between">
-<span class="font-label text-xs text-on-surface-variant">4 min read</span>
-<a href="proteindj.html" class="text-primary hover:text-primary-container transition-colors font-label text-sm uppercase tracking-wider">Read Brief</a>
+<a href="#" class="text-primary hover:text-primary-container transition-colors font-label text-sm uppercase tracking-wider">Read Brief</a>
 </div>
 </div>
 </div>
@@ -183,7 +181,7 @@ How new analytical approaches are making complex biological data more actionable
 <div class="text-center">
 <div class="w-16 h-1 bg-primary mx-auto mb-6"></div>
 <p class="font-body text-lg text-secondary leading-relaxed">
-Emiliano D. Primo, PhD, is a microbial biotechnology scientist with a background in microbiology, protein engineering, molecular biology, and applied R&D. Science, In Brief reflects his passion for science and technology, translating peer-reviewed research into concise, human-reviewed insights for readers who want clarity without losing rigor.
+Emiliano D. Primo, PhD, is a microbial biotechnology scientist with a background in microbiology, protein engineering, molecular biology, and applied R&D. Science, In Brief reflects his passion for science communication and making research accessible.
 </p>
 </div>
 </div>
@@ -215,7 +213,7 @@ Receive concise, human-reviewed summaries of recent research in biotechnology, m
 <div>
 <div class="font-headline text-xl italic text-white mb-4">Science, In Brief</div>
 <p class="font-body text-sm text-slate-400">
-© 2024 Science, In Brief. All rights reserved.
+© 2026 Science, In Brief. All rights reserved.
 </p>
 </div>
 <nav class="flex flex-wrap gap-4 md:justify-end">
