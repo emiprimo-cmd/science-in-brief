@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Disordered Protein LAT Encodes Signal Balance in T Cell Activation | Science, In Brief</title>
+<title>Best Practices for Machine Learning-Assisted Protein Engineering | Science, In Brief</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&display=swap" rel="stylesheet"/>
@@ -37,17 +37,17 @@
 <article class="space-y-10">
 <div class="bg-surface-container p-10 rounded-[2rem] shadow-[0_30px_80px_rgba(0,77,77,0.08)]">
 <div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.25em] font-semibold text-primary/80 mb-6">
-<span>Immunology</span>
+<span>Machine Learning</span>
 <span class="text-slate-400">&bull;</span>
-<span>2026</span>
+<span>Nov 17, 2025</span>
 <span class="rounded-full bg-amber-100 px-3 py-1 text-amber-900">Peer-reviewed</span>
 </div>
-<h1 class="font-headline text-5xl tracking-[-0.03em] text-primary mb-6">Disordered Protein LAT Encodes Signal Balance in T Cell Activation</h1>
-<p class="max-w-3xl text-xl text-secondary leading-relaxed">A large-scale single-cell mutational screen reveals that the disordered adapter protein LAT tunes T cell signaling balance through distributed functional elements.</p>
+<h1 class="font-headline text-5xl tracking-[-0.03em] text-primary mb-6">Best Practices for Machine Learning-Assisted Protein Engineering</h1>
+<p class="max-w-3xl text-xl text-secondary leading-relaxed">A practical roadmap argues that better data handling, validation, code quality, and deployment standards are essential for reliable ML-guided protein engineering.</p>
 </div>
 <figure class="overflow-hidden rounded-[2rem] border border-surface-container-high bg-white shadow-sm">
-<img src="tcell_dual_editorial_art.png" alt="Abstract editorial illustration of T cells with surface receptors and signal particles" class="w-full h-auto object-cover" />
-<figcaption class="px-6 py-4 text-sm text-slate-500">Editorial visualization of T cell receptor signaling and distributed LAT sequence function.</figcaption>
+<img src="ML_protein.png" alt="Illustration of a machine learning workflow for protein engineering with data collection, model training, evaluation, optimization, DNA, proteins, and validation notes" class="w-full h-auto object-cover" />
+<figcaption class="px-6 py-4 text-sm text-slate-500">Machine learning-assisted protein engineering depends on disciplined data collection, model evaluation, interpretability, and experimental validation.</figcaption>
 </figure>
 <section class="space-y-8">
 <div class="space-y-5">
@@ -55,43 +55,44 @@
 <span class="material-symbols-outlined text-base">science</span>
 <strong>Context</strong>
 </div>
-<p class="text-base leading-8 text-slate-700">When a T cell detects a foreign antigen, it launches a rapid cascade of molecular events. A central coordinator in this process is LAT, the Linker for Activation of T cells, a transmembrane adapter protein whose cytoplasmic tail is largely intrinsically disordered. After T cell receptor activation, LAT is phosphorylated by ZAP-70 and recruits multiple protein partners to coordinate downstream pathways including NFAT and AP-1.</p>
-<p class="text-base leading-8 text-slate-700">The central puzzle is how a structurally disordered protein can produce precise and balanced signal branching. Traditional biochemical work identified a small set of important tyrosine residues, but a broader sequence-level map of how LAT encodes signaling balance was still missing.</p>
+<p class="text-base leading-8 text-slate-700">Protein engineering aims to redesign proteins for improved or novel properties such as activity, stability, selectivity, or binding. Machine learning is increasingly used to navigate the enormous sequence space more efficiently than trial-and-error screening alone.</p>
+<p class="text-base leading-8 text-slate-700">But the authors argue that many ML projects in protein engineering still underuse basic software engineering practices. Poor data splits, unclear preprocessing, weak documentation, and insufficient validation can produce models that look accurate but fail to generalize to new variants.</p>
 </div>
 <div class="rounded-[1.5rem] border border-surface-container-high bg-white p-8">
 <h2 class="text-2xl font-semibold text-primary mb-4">What they did</h2>
-<p class="text-base leading-8 text-slate-700">Rubin et al. developed a pooled single-cell high-content screening strategy to dissect the sequence-function relationship of LAT. They generated a library of LAT mutants, including triple alanine block substitutions across the protein, single and multisite variants, and charge-altering mutations, then introduced them into <em>LAT</em>-knockout Jurkat T cells.</p>
-<p class="text-base leading-8 text-slate-700 mt-4">After TCR stimulation, individual cells were profiled at the epigenomic, transcriptomic, and cell-surface protein levels using single-cell genomics. This made it possible to measure the functional consequences of each LAT variant across multiple signaling dimensions in parallel, with key results validated in primary human CD4+ central memory T cells.</p>
+<p class="text-base leading-8 text-slate-700">Herrera-Rocha and colleagues present a Perspective outlining best practices for supervised ML in protein engineering. The workflow spans the full model lifecycle: data collection, label cleaning, exploratory analysis, data splitting, protein representation, dimensionality reduction, model selection, training, evaluation, code quality, and deployment.</p>
+<p class="text-base leading-8 text-slate-700 mt-4">They also introduce the Protein Engineering Code Center, an open-source GitHub repository intended to provide tutorials, reusable code, environment configurations, and practical examples for standardized ML workflows in protein engineering.</p>
 </div>
 <div class="rounded-[1.5rem] border border-surface-container-high bg-surface-container p-8">
 <h2 class="text-2xl font-semibold text-primary mb-4">Key finding</h2>
-<p class="text-base leading-8 text-slate-700">LAT contains many functional sequence elements distributed across its disordered tail. These elements influence downstream signaling pathways in a coordinated way, suggesting that signal balance is encoded through widespread functional regions rather than a few isolated molecular switches.</p>
+<p class="text-base leading-8 text-slate-700">The central message is that ML-assisted protein engineering needs more than high-performing algorithms. Reliable models require high-quality experimental labels, biologically informed data splits, careful feature representation, separate validation and test sets, interpretable evaluation, wet-lab confirmation when possible, and reproducible code and deployment practices.</p>
 </div>
 <div class="space-y-5">
 <h2 class="text-2xl font-semibold text-primary">Why it matters</h2>
-<p class="text-base leading-8 text-slate-700">This work reframes intrinsically disordered proteins as active encoders of signaling information. For immune biology, it suggests that T cell responses are shaped not only by discrete binding motifs but also by distributed sequence properties such as charge and clustering behavior. That insight could inform future strategies for modulating T cell responses in autoimmunity, cancer immunotherapy, and vaccine design.</p>
+<p class="text-base leading-8 text-slate-700">Machine learning can accelerate protein engineering by prioritizing promising variants and reducing experimental burden. But in biological sequence design, data sets are often small, biased, imbalanced, and shaped by evolutionary relationships. Without careful safeguards, models can leak information across train and test sets or overfit to patterns that do not help in real campaigns.</p>
+<p class="text-base leading-8 text-slate-700">By framing ML development as a software engineering process, the paper gives protein engineers, reviewers, and journal editors a concrete checklist for improving transparency, reproducibility, and trust in ML-guided design studies.</p>
 </div>
 <div class="grid gap-6 md:grid-cols-2">
 <div class="rounded-[1.5rem] border border-rose-100 bg-rose-50 p-6">
 <div class="flex items-center gap-2 text-rose-700 font-semibold mb-3"><span class="material-symbols-outlined">warning</span>Limitations</div>
-<p class="text-sm leading-7 text-slate-700">The primary screen used Jurkat T cells, a leukemic cell line that does not fully reproduce primary T cell biology. Although selected findings were validated in primary human CD4+ T cells, LAT function may vary across T cell subsets, activation contexts, and cytokine environments.</p>
+<p class="text-sm leading-7 text-slate-700">This is a best-practices Perspective rather than a benchmark of a new predictive model. The authors explicitly focus on quality standards and supervised learning workflows, not on providing the latest cutting-edge architecture for every protein engineering task.</p>
 </div>
 <div class="rounded-[1.5rem] border border-amber-100 bg-amber-50 p-6">
 <div class="flex items-center gap-2 text-amber-900 font-semibold mb-3"><span class="material-symbols-outlined">check_circle</span>Take-home</div>
-<p class="text-sm leading-7 text-slate-700">LAT is not simply a passive docking platform. Its disordered sequence encodes the relative balance of T cell signaling outputs through distributed functional elements.</p>
+<p class="text-sm leading-7 text-slate-700">In ML-guided protein engineering, better modeling practice is part of the science: reproducible data, robust validation, and maintainable code are prerequisites for trustworthy predictions.</p>
 </div>
 </div>
 <div class="border-l-4 border-primary pl-6 py-4">
-<p class="text-base italic text-slate-700">"The study shows how single-cell multi-omics can turn deep mutational scanning into a functional map of disordered protein signaling."</p>
+<p class="text-base italic text-slate-700">"The practical message is simple: before chasing model complexity, make the data, validation, code, and deployment pipeline strong enough to trust."</p>
 </div>
 </section>
 <div class="rounded-[1.75rem] border border-surface-container-high bg-white p-8 shadow-sm">
 <div class="text-xs uppercase tracking-[0.25em] text-slate-500 mb-3">Source Data</div>
-<h2 class="text-xl font-semibold text-primary mb-2">Disordered protein LAT encodes relative levels of signaling pathways in T cell activation</h2>
-<p class="text-sm text-slate-600 mb-1">Authors: Adam J. Rubin, Tyler T. Dao, Lukas M. Altenburger et al.</p>
-<p class="text-sm text-slate-600 mb-4">Journal: <em>Science</em>, Vol. 392, 2026</p>
-<div class="inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-2 text-xs text-primary">DOI: 10.1126/science.ads6847</div>
-<a class="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-on-primary hover:bg-teal-700 transition" href="https://doi.org/10.1126/science.ads6847" target="_blank" rel="noopener noreferrer">
+<h2 class="text-xl font-semibold text-primary mb-2">Best Practices for Machine Learning-Assisted Protein Engineering</h2>
+<p class="text-sm text-slate-600 mb-1">Authors: Fabio Herrera-Rocha, David Medina-Ortiz, Fabian Mauz, Juergen Pleiss, and Mehdi D. Davari</p>
+<p class="text-sm text-slate-600 mb-4">Journal: <em>Journal of Chemical Information and Modeling</em>, Vol. 65, 12655-12667, 2025</p>
+<div class="inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-2 text-xs text-primary">DOI: 10.1021/acs.jcim.5c01983</div>
+<a class="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-on-primary hover:bg-teal-700 transition" href="https://doi.org/10.1021/acs.jcim.5c01983" target="_blank" rel="noopener noreferrer">
 View original paper
 <span class="material-symbols-outlined">arrow_forward</span>
 </a>
@@ -103,25 +104,25 @@ View original paper
 <p class="text-sm text-slate-600 mb-6">Test your retention of the core concepts.</p>
 <form class="space-y-6">
 <fieldset>
-<legend class="text-sm font-medium text-slate-800">1. What is the primary role of LAT in T cell activation?</legend>
+<legend class="text-sm font-medium text-slate-800">1. What is the paper's main recommendation?</legend>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q1" value="a" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">It coordinates downstream signaling after TCR activation.</span>
+<span class="text-sm text-slate-700">Use reproducible, well-validated ML workflows across the full protein engineering pipeline.</span>
 </label>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q1" value="b" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">It directly binds foreign antigens on the cell surface.</span>
+<span class="text-sm text-slate-700">Replace all experimental screening with unsupervised protein language models.</span>
 </label>
 </fieldset>
 <fieldset>
-<legend class="text-sm font-medium text-slate-800">2. What was the key methodological advance?</legend>
+<legend class="text-sm font-medium text-slate-800">2. Why are careful data splits important?</legend>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q2" value="a" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">A pooled single-cell screen of LAT mutants with multi-omic readouts.</span>
+<span class="text-sm text-slate-700">They reduce data leakage and give a fairer test of generalization to unseen variants.</span>
 </label>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q2" value="b" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">A cryo-EM structure of LAT in its active conformation.</span>
+<span class="text-sm text-slate-700">They eliminate the need for experimental labels.</span>
 </label>
 </fieldset>
 <button type="button" class="w-full rounded-full bg-slate-200 px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-300 transition">Submit Answers</button>
@@ -133,9 +134,9 @@ View original paper
 <div class="space-y-2">
 <div class="flex items-center gap-3 text-sm font-semibold text-slate-900">
 <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">Dr</span>
-<span>Dr. M. Alvarez</span>
+<span>Dr. R. Singh</span>
 </div>
-<p class="text-sm text-slate-600">If disordered proteins encode signaling balance through distributed sequence features, drug discovery may need to look beyond single binding pockets or isolated motifs.</p>
+<p class="text-sm text-slate-600">Should journals require code, data splits, and deployment details for ML-guided protein engineering papers in the same way they require experimental methods?</p>
 </div>
 </div>
 <a href="#" class="inline-flex w-full items-center justify-center rounded-full border border-surface-container-high bg-surface-container px-4 py-3 text-sm font-semibold text-primary transition hover:bg-slate-100">Join the conversation</a>
@@ -145,7 +146,7 @@ View original paper
 </main>
 <footer id="contact" class="border-t border-surface-container-high bg-white py-10">
 <div class="mx-auto max-w-7xl px-6 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between text-sm text-slate-500">
-<p>&copy; 2026 Science, In Brief. Peer-Reviewed Academic Publication.</p>
+<p>&copy; 2025 Science, In Brief. Peer-Reviewed Academic Publication.</p>
 <div class="flex flex-wrap gap-4">
 <a href="about.html" class="hover:text-primary">About</a>
 <a href="editor.html" class="hover:text-primary">Meet the Founder</a>

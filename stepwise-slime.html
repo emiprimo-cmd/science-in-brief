@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Disordered Protein LAT Encodes Signal Balance in T Cell Activation | Science, In Brief</title>
+<title>Stepwise Slime Mould Growth as a Template for Urban Design | Science, In Brief</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&display=swap" rel="stylesheet"/>
@@ -37,17 +37,17 @@
 <article class="space-y-10">
 <div class="bg-surface-container p-10 rounded-[2rem] shadow-[0_30px_80px_rgba(0,77,77,0.08)]">
 <div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.25em] font-semibold text-primary/80 mb-6">
-<span>Immunology</span>
+<span>Bio-inspired Design</span>
 <span class="text-slate-400">&bull;</span>
-<span>2026</span>
+<span>Jan 19, 2022</span>
 <span class="rounded-full bg-amber-100 px-3 py-1 text-amber-900">Peer-reviewed</span>
 </div>
-<h1 class="font-headline text-5xl tracking-[-0.03em] text-primary mb-6">Disordered Protein LAT Encodes Signal Balance in T Cell Activation</h1>
-<p class="max-w-3xl text-xl text-secondary leading-relaxed">A large-scale single-cell mutational screen reveals that the disordered adapter protein LAT tunes T cell signaling balance through distributed functional elements.</p>
+<h1 class="font-headline text-5xl tracking-[-0.03em] text-primary mb-6">Stepwise Slime Mould Growth as a Template for Urban Design</h1>
+<p class="max-w-3xl text-xl text-secondary leading-relaxed">A two-phase model inspired by <em>Physarum</em> separates network growth from network refinement, giving designers tunable control over cost, travel time, and fault vulnerability.</p>
 </div>
 <figure class="overflow-hidden rounded-[2rem] border border-surface-container-high bg-white shadow-sm">
-<img src="tcell_dual_editorial_art.png" alt="Abstract editorial illustration of T cells with surface receptors and signal particles" class="w-full h-auto object-cover" />
-<figcaption class="px-6 py-4 text-sm text-slate-500">Editorial visualization of T cell receptor signaling and distributed LAT sequence function.</figcaption>
+<img src="Stepwise_slime.png" alt="Illustrated slime mould network spreading across a map with Rome, Naissus, rail infrastructure, and a petri dish" class="w-full h-auto object-cover" />
+<figcaption class="px-6 py-4 text-sm text-slate-500">Bio-inspired transport design: <em>Physarum</em>-like growth translated into an urban network over geographic space.</figcaption>
 </figure>
 <section class="space-y-8">
 <div class="space-y-5">
@@ -55,43 +55,44 @@
 <span class="material-symbols-outlined text-base">science</span>
 <strong>Context</strong>
 </div>
-<p class="text-base leading-8 text-slate-700">When a T cell detects a foreign antigen, it launches a rapid cascade of molecular events. A central coordinator in this process is LAT, the Linker for Activation of T cells, a transmembrane adapter protein whose cytoplasmic tail is largely intrinsically disordered. After T cell receptor activation, LAT is phosphorylated by ZAP-70 and recruits multiple protein partners to coordinate downstream pathways including NFAT and AP-1.</p>
-<p class="text-base leading-8 text-slate-700">The central puzzle is how a structurally disordered protein can produce precise and balanced signal branching. Traditional biochemical work identified a small set of important tyrosine residues, but a broader sequence-level map of how LAT encodes signaling balance was still missing.</p>
+<p class="text-base leading-8 text-slate-700">The slime mould <em>Physarum polycephalum</em> grows as a living transport network, extending tubes of protoplasm between food sources while gradually reinforcing efficient paths and eliminating redundant ones. This behavior has made it a useful biological model for network problems such as road, rail, and routing design.</p>
+<p class="text-base leading-8 text-slate-700">Most digital <em>Physarum</em> models combine early foraging and later path reinforcement into one feedback-driven process. That captures biology well, but it can make the model harder to steer when designers need explicit control over competing infrastructure goals.</p>
 </div>
 <div class="rounded-[1.5rem] border border-surface-container-high bg-white p-8">
 <h2 class="text-2xl font-semibold text-primary mb-4">What they did</h2>
-<p class="text-base leading-8 text-slate-700">Rubin et al. developed a pooled single-cell high-content screening strategy to dissect the sequence-function relationship of LAT. They generated a library of LAT mutants, including triple alanine block substitutions across the protein, single and multisite variants, and charge-altering mutations, then introduced them into <em>LAT</em>-knockout Jurkat T cells.</p>
-<p class="text-base leading-8 text-slate-700 mt-4">After TCR stimulation, individual cells were profiled at the epigenomic, transcriptomic, and cell-surface protein levels using single-cell genomics. This made it possible to measure the functional consequences of each LAT variant across multiple signaling dimensions in parallel, with key results validated in primary human CD4+ central memory T cells.</p>
+<p class="text-base leading-8 text-slate-700">Kay, Mattacchione, Katrycz, and Hatton built a two-stage computational model of <em>Physarum</em>-inspired network formation. First, an agent-based simulation generated a site-responsive mesh from agents attracted to nutrient-like points. Then, a modified shortest-walk calculation refined that mesh into a final network.</p>
+<p class="text-base leading-8 text-slate-700 mt-4">They compared model-generated networks with real <em>Physarum</em> grown on oat layouts, then applied the method to urban-scale examples including Canada's Wonderland, the Toronto subway system, and population-density-defined attractor networks.</p>
 </div>
 <div class="rounded-[1.5rem] border border-surface-container-high bg-surface-container p-8">
 <h2 class="text-2xl font-semibold text-primary mb-4">Key finding</h2>
-<p class="text-base leading-8 text-slate-700">LAT contains many functional sequence elements distributed across its disordered tail. These elements influence downstream signaling pathways in a coordinated way, suggesting that signal balance is encoded through widespread functional regions rather than a few isolated molecular switches.</p>
+<p class="text-base leading-8 text-slate-700">The stepwise model reproduced the performance of biological <em>Physarum</em> networks to within 4% across cost, travel time, and vulnerability metrics. By adjusting a proximity coefficient during refinement, the model could tune network connectivity: higher connectivity increased total cost but reduced travel time and fault vulnerability.</p>
 </div>
 <div class="space-y-5">
 <h2 class="text-2xl font-semibold text-primary">Why it matters</h2>
-<p class="text-base leading-8 text-slate-700">This work reframes intrinsically disordered proteins as active encoders of signaling information. For immune biology, it suggests that T cell responses are shaped not only by discrete binding motifs but also by distributed sequence properties such as charge and clustering behavior. That insight could inform future strategies for modulating T cell responses in autoimmunity, cancer immunotherapy, and vaccine design.</p>
+<p class="text-base leading-8 text-slate-700">The work turns slime mould growth into a controllable design workflow rather than only a biological simulation. Because the mesh-building and refinement stages are separated, designers can generate networks from attractor-based spatial data and then tune them for practical trade-offs such as efficiency, resilience, and infrastructure cost.</p>
+<p class="text-base leading-8 text-slate-700">The approach also gives a quantitative way to benchmark existing urban networks. In the paper's examples, modelled networks sometimes differed from built infrastructure in revealing ways, highlighting how biological design rules can expose trade-offs that conventional planning may not make explicit.</p>
 </div>
 <div class="grid gap-6 md:grid-cols-2">
 <div class="rounded-[1.5rem] border border-rose-100 bg-rose-50 p-6">
 <div class="flex items-center gap-2 text-rose-700 font-semibold mb-3"><span class="material-symbols-outlined">warning</span>Limitations</div>
-<p class="text-sm leading-7 text-slate-700">The primary screen used Jurkat T cells, a leukemic cell line that does not fully reproduce primary T cell biology. Although selected findings were validated in primary human CD4+ T cells, LAT function may vary across T cell subsets, activation contexts, and cytokine environments.</p>
+<p class="text-sm leading-7 text-slate-700">The model deliberately omits the constructive feedback mechanism of real <em>Physarum</em> streaming, so it is less biologically faithful than some integrated models. It also currently works in idealized attractor-based environments and does not include repellants or anti-attractors, which are important in real urban landscapes.</p>
 </div>
 <div class="rounded-[1.5rem] border border-amber-100 bg-amber-50 p-6">
 <div class="flex items-center gap-2 text-amber-900 font-semibold mb-3"><span class="material-symbols-outlined">check_circle</span>Take-home</div>
-<p class="text-sm leading-7 text-slate-700">LAT is not simply a passive docking platform. Its disordered sequence encodes the relative balance of T cell signaling outputs through distributed functional elements.</p>
+<p class="text-sm leading-7 text-slate-700">Separating <em>Physarum</em>-like growth into biased meshing and network refinement creates a practical tool for tunable, bio-inspired network design.</p>
 </div>
 </div>
 <div class="border-l-4 border-primary pl-6 py-4">
-<p class="text-base italic text-slate-700">"The study shows how single-cell multi-omics can turn deep mutational scanning into a functional map of disordered protein signaling."</p>
+<p class="text-base italic text-slate-700">"The main contribution is not simply copying slime mould, but making its network logic editable: first grow a responsive mesh, then tune the final transport system."</p>
 </div>
 </section>
 <div class="rounded-[1.75rem] border border-surface-container-high bg-white p-8 shadow-sm">
 <div class="text-xs uppercase tracking-[0.25em] text-slate-500 mb-3">Source Data</div>
-<h2 class="text-xl font-semibold text-primary mb-2">Disordered protein LAT encodes relative levels of signaling pathways in T cell activation</h2>
-<p class="text-sm text-slate-600 mb-1">Authors: Adam J. Rubin, Tyler T. Dao, Lukas M. Altenburger et al.</p>
-<p class="text-sm text-slate-600 mb-4">Journal: <em>Science</em>, Vol. 392, 2026</p>
-<div class="inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-2 text-xs text-primary">DOI: 10.1126/science.ads6847</div>
-<a class="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-on-primary hover:bg-teal-700 transition" href="https://doi.org/10.1126/science.ads6847" target="_blank" rel="noopener noreferrer">
+<h2 class="text-xl font-semibold text-primary mb-2">Stepwise slime mould growth as a template for urban design</h2>
+<p class="text-sm text-slate-600 mb-1">Authors: Raphael Kay, Anthony Mattacchione, Charlie Katrycz, and Benjamin D. Hatton</p>
+<p class="text-sm text-slate-600 mb-4">Journal: <em>Scientific Reports</em>, Vol. 12, Article 1322, 2022</p>
+<div class="inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-2 text-xs text-primary">DOI: 10.1038/s41598-022-05439-w</div>
+<a class="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-on-primary hover:bg-teal-700 transition" href="https://doi.org/10.1038/s41598-022-05439-w" target="_blank" rel="noopener noreferrer">
 View original paper
 <span class="material-symbols-outlined">arrow_forward</span>
 </a>
@@ -103,25 +104,25 @@ View original paper
 <p class="text-sm text-slate-600 mb-6">Test your retention of the core concepts.</p>
 <form class="space-y-6">
 <fieldset>
-<legend class="text-sm font-medium text-slate-800">1. What is the primary role of LAT in T cell activation?</legend>
+<legend class="text-sm font-medium text-slate-800">1. What are the two main stages in the model?</legend>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q1" value="a" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">It coordinates downstream signaling after TCR activation.</span>
+<span class="text-sm text-slate-700">Biased meshing followed by network refinement.</span>
 </label>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q1" value="b" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">It directly binds foreign antigens on the cell surface.</span>
+<span class="text-sm text-slate-700">DNA sequencing followed by protein folding.</span>
 </label>
 </fieldset>
 <fieldset>
-<legend class="text-sm font-medium text-slate-800">2. What was the key methodological advance?</legend>
+<legend class="text-sm font-medium text-slate-800">2. What trade-off can the model tune?</legend>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q2" value="a" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">A pooled single-cell screen of LAT mutants with multi-omic readouts.</span>
+<span class="text-sm text-slate-700">Network cost, travel time, and fault vulnerability.</span>
 </label>
 <label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
 <input type="radio" name="q2" value="b" class="mt-1 text-primary"/>
-<span class="text-sm text-slate-700">A cryo-EM structure of LAT in its active conformation.</span>
+<span class="text-sm text-slate-700">Cell division rate, gene expression, and immune activation.</span>
 </label>
 </fieldset>
 <button type="button" class="w-full rounded-full bg-slate-200 px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-300 transition">Submit Answers</button>
@@ -133,9 +134,9 @@ View original paper
 <div class="space-y-2">
 <div class="flex items-center gap-3 text-sm font-semibold text-slate-900">
 <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">Dr</span>
-<span>Dr. M. Alvarez</span>
+<span>Dr. L. Moreno</span>
 </div>
-<p class="text-sm text-slate-600">If disordered proteins encode signaling balance through distributed sequence features, drug discovery may need to look beyond single binding pockets or isolated motifs.</p>
+<p class="text-sm text-slate-600">If a bio-inspired model produces a more resilient network than a built system, should planners treat that as an optimization target or as one benchmark among many social and political constraints?</p>
 </div>
 </div>
 <a href="#" class="inline-flex w-full items-center justify-center rounded-full border border-surface-container-high bg-surface-container px-4 py-3 text-sm font-semibold text-primary transition hover:bg-slate-100">Join the conversation</a>
@@ -145,7 +146,7 @@ View original paper
 </main>
 <footer id="contact" class="border-t border-surface-container-high bg-white py-10">
 <div class="mx-auto max-w-7xl px-6 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between text-sm text-slate-500">
-<p>&copy; 2026 Science, In Brief. Peer-Reviewed Academic Publication.</p>
+<p>&copy; 2022 Science, In Brief. Peer-Reviewed Academic Publication.</p>
 <div class="flex flex-wrap gap-4">
 <a href="about.html" class="hover:text-primary">About</a>
 <a href="editor.html" class="hover:text-primary">Meet the Founder</a>
