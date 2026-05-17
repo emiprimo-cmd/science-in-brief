@@ -25,9 +25,6 @@
 <a class="text-slate-600 dark:text-slate-400 font-sans tracking-wide text-sm hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="#contact">Contact</a>
 </nav>
 <div class="flex items-center gap-4">
-<button type="button" class="scale-100 active:scale-95 transition-transform text-slate-600 dark:text-slate-400 hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300">
-<span class="material-symbols-outlined" data-icon="search">search</span>
-</button>
 <button type="button" class="bg-primary text-on-primary rounded font-label uppercase tracking-[0.05em] text-xs px-4 py-2 scale-100 active:scale-95 transition-transform">Subscribe</button>
 </div>
 </div>
@@ -95,7 +92,7 @@ View original paper
 </div>
 </article>
 <aside class="space-y-8">
-<div class="rounded-[2rem] border border-surface-container-high bg-white p-8 shadow-[0_18px_50px_rgba(0,77,77,0.06)] sticky top-6">
+<div class="rounded-[2rem] border border-surface-container-high bg-white p-8 shadow-[0_18px_50px_rgba(0,77,77,0.06)]">
 <h3 class="font-semibold text-2xl text-primary mb-3">Check your understanding</h3>
 <p class="text-sm text-slate-600 mb-6">Test your retention of the core concepts.</p>
 <form class="space-y-6">
@@ -142,18 +139,18 @@ View original paper
 </main>
 <footer id="contact" class="border-t border-surface-container-high bg-white py-10">
 <div class="mx-auto max-w-7xl px-6 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between text-sm text-slate-500">
-<p>© 2024 Science, In Brief. Peer-Reviewed Academic Publication.</p>
+<p>© 2026 Science, In Brief. Peer-Reviewed Academic Publication.</p>
 <div class="flex flex-wrap gap-4">
 <a href="about.html" class="hover:text-primary">About</a>
 <a href="editor.html" class="hover:text-primary">Meet the Founder</a>
 <a href="#contact" class="hover:text-primary">Contact</a>
-<a href="#" class="hover:text-primary">Scientific Disclaimer</a>
-<a href="#" class="hover:text-primary">Privacy Policy</a>
+<a href="editorial-policy.html" class="hover:text-primary">Editorial Policy</a>
+<a href="privacy-policy.html" class="hover:text-primary">Privacy Policy</a>
 </div>
 </div>
 </footer>
 <script>
-const quizButton = document.querySelector('button[type="button"]');
+const quizButton = document.querySelector('form button[type="button"]');
 if (quizButton) {
   quizButton.addEventListener('click', () => {
     const q1 = document.querySelector('input[name="q1"]:checked');
