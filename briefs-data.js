@@ -1,5 +1,17 @@
 const SCIENCE_BRIEFS = [
   {
+    title: "Atom-Level Enzyme Active Site Scaffolding Using RFdiffusion2",
+    summary: "RFdiffusion2 generates protein scaffolds directly around atomic active-site geometries, improving in silico enzyme scaffolding and yielding experimentally active designs.",
+    topic: "Protein Design",
+    readTime: "6 min read",
+    date: "2025-12-03",
+    dateLabel: "Dec 3, 2025",
+    journal: "Nature Methods, 2026",
+    href: "atom-level-enzyme.html",
+    image: "atom-level-enzyme.png",
+    alt: "Scientific illustration of a protein scaffold forming around an atom-level enzyme active site"
+  },
+  {
     title: "Disordered Protein LAT Encodes Signal Balance in T Cell Activation",
     summary: "A single-cell mutational screen shows how the disordered adapter LAT tunes T cell signaling through distributed sequence elements.",
     topic: "Immunology",

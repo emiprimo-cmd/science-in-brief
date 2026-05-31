@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Atom-level enzyme active site scaffolding using RFdiffusion2 | Science, In Brief</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#004d51", secondary: "#305f62", surface: "#f5fbfa", "surface-container": "#eef7f5", "surface-container-high": "#dbe9e7", "surface-container-low": "#f8fcfb", "on-surface": "#0f2628", "on-surface-variant": "#486463", outline: "#a8b7b4", tertiary: "#00686a", "on-primary": "#ffffff"}, borderRadius: {lg: "1rem", xl: "1.5rem"}, fontFamily: {headline: ["Newsreader"], body: ["Inter"], label: ["Inter"], display: ["Newsreader"]}}}};</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen">
+<header class="sticky top-0 w-full z-50 bg-stone-50/90 dark:bg-slate-950/90 backdrop-blur-md shadow-sm dark:shadow-none bg-slate-200/50 dark:bg-slate-800/50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<a href="index.html" class="text-2xl font-serif italic font-medium text-teal-900 dark:text-teal-500 font-headline">Science, In Brief</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-slate-600 dark:text-slate-400 font-sans tracking-wide text-sm hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="index.html">Home</a>
+<a class="text-teal-900 dark:text-teal-300 border-b-2 border-teal-900 dark:border-teal-300 pb-1 font-sans tracking-wide text-sm hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="latest.html">Latest</a>
+<a class="text-slate-600 dark:text-slate-400 font-sans tracking-wide text-sm hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="latest.html#topics">Topics</a>
+<a class="text-slate-600 dark:text-slate-400 font-sans tracking-wide text-sm hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="about.html">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-sans tracking-wide text-sm hover:text-teal-700 dark:hover:text-teal-200 transition-all duration-300 scale-100 active:scale-95 transition-transform" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button type="button" class="bg-primary text-on-primary rounded font-label uppercase tracking-[0.05em] text-xs px-4 py-2 scale-100 active:scale-95 transition-transform">Subscribe</button>
+</div>
+</div>
+</header>
+<main class="mx-auto max-w-7xl px-6 py-10 lg:py-16">
+<div class="grid gap-10 lg:grid-cols-[1.9fr_1fr] items-start">
+<article class="space-y-10">
+<div class="bg-surface-container p-10 rounded-[2rem] shadow-[0_30px_80px_rgba(0,77,77,0.08)]">
+<div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.25em] font-semibold text-primary/80 mb-6">
+<span>Protein Design</span>
+<span class="text-slate-400">•</span>
+<span>Dec 3, 2025</span>
+<span class="rounded-full bg-amber-100 px-3 py-1 text-amber-900">Peer-reviewed</span>
+</div>
+<h1 class="font-headline text-5xl tracking-[-0.03em] text-primary mb-6">Atom-level enzyme active site scaffolding using RFdiffusion2</h1>
+<p class="max-w-3xl text-xl text-secondary leading-relaxed">A generative protein-design model builds enzyme scaffolds directly around atomic active-site geometries, reducing a major bottleneck in de novo enzyme design.</p>
+</div>
+<figure class="overflow-hidden rounded-[2rem] border border-surface-container-high bg-white shadow-sm">
+<img src="atom-level-enzyme.png" alt="Scientific illustration of a protein scaffold forming around an atom-level enzyme active site" class="w-full h-auto object-cover"/>
+<figcaption class="px-6 py-4 text-sm text-slate-500">Editorial visualization of atom-level active-site scaffolding: a protein framework is generated around catalytic atoms and a transition-state-like molecule.</figcaption>
+</figure>
+<section class="space-y-8">
+<div class="space-y-5">
+<div class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary/80">
+<span class="material-symbols-outlined text-base">science</span>
+<strong>Context</strong>
+</div>
+<p class="text-base leading-8 text-slate-700">Designing enzymes from scratch usually starts with a theozyme: an ideal arrangement of catalytic functional groups around a reaction transition state. Earlier AI methods could produce active enzymes, but they often required designers to predefine residue positions or reverse-build backbones from side-chain placements, limiting flexibility for complex active sites.</p>
+</div>
+<div class="rounded-[1.5rem] border border-surface-container-high bg-white p-8">
+<h2 class="text-2xl font-semibold text-primary mb-4">What they did</h2>
+<p class="text-base leading-8 text-slate-700">Ahern, Yim and colleagues developed RoseTTAFold diffusion 2, or RFdiffusion2, a flow-matching generative model trained on biomolecular structures from the Protein Data Bank. The model accepts atomic motifs, small molecules, metals and unindexed catalytic residues, then generates protein scaffolds without requiring the user to specify residue order or enumerate rotamers in advance.</p>
+</div>
+<div class="rounded-[1.5rem] border border-surface-container-high bg-surface-container p-8">
+<h2 class="text-2xl font-semibold text-primary mb-4">Key finding</h2>
+<p class="text-base leading-8 text-slate-700">On a new 41-case atomic motif enzyme benchmark, RFdiffusion2 produced at least one in silico successful scaffold for all 41 active sites, compared with 16 of 41 for the previous RFdiffusion approach. In experimental campaigns, the team found active retroaldolase, cysteine hydrolase and zinc hydrolase designs after testing fewer than 96 proteins per case.</p>
+</div>
+<div class="space-y-5">
+<h2 class="text-2xl font-semibold text-primary">Why it matters</h2>
+<p class="text-base leading-8 text-slate-700">The result shifts enzyme design closer to a mechanism-first workflow: start with the chemistry, then let the model search for a compatible protein scaffold. That matters because programmable enzymes could support new routes for synthesis, catalysis and environmental chemistry, but only if computational design can handle atomic active sites with fewer manual assumptions.</p>
+</div>
+<div class="grid gap-6 md:grid-cols-2">
+<div class="rounded-[1.5rem] border border-rose-100 bg-rose-50 p-6">
+<div class="flex items-center gap-2 text-rose-700 font-semibold mb-3"><span class="material-symbols-outlined">warning</span>Limitations</div>
+<p class="text-sm leading-7 text-slate-700">The designed enzymes were active, but the authors note they are not as active as native enzymes. The AME benchmark is also based on PDB-derived motifs from native enzyme annotations, and it does not yet test enzymes with multiple transition states.</p>
+</div>
+<div class="rounded-[1.5rem] border border-amber-100 bg-amber-50 p-6">
+<div class="flex items-center gap-2 text-amber-900 font-semibold mb-3"><span class="material-symbols-outlined">check_circle</span>Take-home</div>
+<p class="text-sm leading-7 text-slate-700">RFdiffusion2 does not make enzyme design solved, but it removes a key geometric constraint: catalytic atoms can be specified first, while residue identity and placement are inferred during scaffold generation.</p>
+</div>
+</div>
+<div class="border-l-4 border-primary pl-6 py-4">
+<p class="text-base italic text-slate-700">The advance is not just better protein generation; it is a cleaner interface between chemical mechanism and protein structure.</p>
+</div>
+</section>
+<div class="rounded-[1.75rem] border border-surface-container-high bg-white p-8 shadow-sm">
+<div class="text-xs uppercase tracking-[0.25em] text-slate-500 mb-3">Source Data</div>
+<h2 class="text-xl font-semibold text-primary mb-2">Atom-level enzyme active site scaffolding using RFdiffusion2</h2>
+<p class="text-sm text-slate-600 mb-2">Authors: Woody Ahern, Jason Yim, Doug Tischer, Saman Salike, Seth M. Woodbury, Donghyo Kim, Indrek Kalvet, Yakov Kipnis, Brian Coventry, Han Raut Altae-Tran, Magnus S. Bauer, Regina Barzilay, Tommi S. Jaakkola, Rohith Krishna and David Baker</p>
+<p class="text-sm text-slate-600 mb-4">Journal: Nature Methods</p>
+<div class="inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-2 text-xs text-primary">DOI: 10.1038/s41592-025-02975-x</div>
+<a class="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-on-primary hover:bg-teal-700 transition" href="https://doi.org/10.1038/s41592-025-02975-x" target="_blank" rel="noopener noreferrer">
+View original paper
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</article>
+<aside class="space-y-8">
+<div class="rounded-[2rem] border border-surface-container-high bg-white p-8 shadow-[0_18px_50px_rgba(0,77,77,0.06)]">
+<h3 class="font-semibold text-2xl text-primary mb-3">Check your understanding</h3>
+<p class="text-sm text-slate-600 mb-6">Test your retention of the core concepts.</p>
+<form class="space-y-6">
+<fieldset>
+<legend class="text-sm font-medium text-slate-800">1. What constraint does RFdiffusion2 reduce in enzyme scaffolding?</legend>
+<label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
+<input type="radio" name="q1" value="a" class="mt-1 text-primary"/>
+<span class="text-sm text-slate-700">The need to prespecify residue order and enumerate side-chain rotamers.</span>
+</label>
+<label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
+<input type="radio" name="q1" value="b" class="mt-1 text-primary"/>
+<span class="text-sm text-slate-700">The need to experimentally test designed enzymes.</span>
+</label>
+</fieldset>
+<fieldset>
+<legend class="text-sm font-medium text-slate-800">2. How did RFdiffusion2 perform on the 41-case AME benchmark?</legend>
+<label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
+<input type="radio" name="q2" value="a" class="mt-1 text-primary"/>
+<span class="text-sm text-slate-700">It produced at least one in silico success for all 41 cases.</span>
+</label>
+<label class="flex items-start gap-3 rounded-2xl border border-surface-container-high bg-surface-container p-4 cursor-pointer">
+<input type="radio" name="q2" value="b" class="mt-1 text-primary"/>
+<span class="text-sm text-slate-700">It succeeded only on the simplest one-residue motifs.</span>
+</label>
+</fieldset>
+<button type="button" class="w-full rounded-full bg-slate-200 px-4 py-3 text-sm font-semibold text-slate-800 hover:bg-slate-300 transition">Submit Answers</button>
+</form>
+</div>
+<div class="rounded-[2rem] border border-surface-container-high bg-white p-8 shadow-[0_18px_50px_rgba(0,77,77,0.06)]">
+<h3 class="font-semibold text-2xl text-primary mb-4">Discussion (3)</h3>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-900">
+<span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">SB</span>
+<span>Dr. S. Bennett</span>
+</div>
+<p class="text-sm text-slate-600">The benchmark result is striking, but the activity gap with native enzymes is the important next frontier.</p>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-900">
+<span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">MR</span>
+<span>M. Rivera</span>
+</div>
+<p class="text-sm text-slate-600">Could broader theozyme definitions help capture the interactions needed for higher catalytic rates?</p>
+</div>
+<div class="space-y-2">
+<div class="flex items-center gap-3 text-sm font-semibold text-slate-900">
+<span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">AL</span>
+<span>A. Laurent</span>
+</div>
+<p class="text-sm text-slate-600">Discussion question: which reactions would benefit most from atom-level scaffolding rather than scaffold-library search?</p>
+</div>
+</div>
+<a href="#" class="mt-6 inline-flex w-full items-center justify-center rounded-full border border-surface-container-high bg-surface-container px-4 py-3 text-sm font-semibold text-primary transition hover:bg-slate-100">Join the conversation</a>
+</div>
+</aside>
+</div>
+</main>
+<footer id="contact" class="border-t border-surface-container-high bg-white py-10">
+<div class="mx-auto max-w-7xl px-6 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between text-sm text-slate-500">
+<p>© 2026 Science, In Brief. Peer-Reviewed Academic Publication.</p>
+<div class="flex flex-wrap gap-4">
+<a href="about.html" class="hover:text-primary">About</a>
+<a href="editor.html" class="hover:text-primary">Meet the Founder</a>
+<a href="#contact" class="hover:text-primary">Contact</a>
+<a href="editorial-policy.html" class="hover:text-primary">Editorial Policy</a>
+<a href="privacy-policy.html" class="hover:text-primary">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script>
+const quizButton = document.querySelector('form button[type="button"]');
+if (quizButton) {
+  quizButton.addEventListener('click', () => {
+    const q1 = document.querySelector('input[name="q1"]:checked');
+    const q2 = document.querySelector('input[name="q2"]:checked');
+    if (!q1 || !q2) {
+      alert('Please answer both questions before submitting.');
+      return;
+    }
+    let score = 0;
+    if (q1.value === 'a') score++;
+    if (q2.value === 'a') score++;
+    const message = score === 2
+      ? '✓ Perfect! You understood the core concepts.'
+      : score === 1
+      ? '● Good effort! You got 1 out of 2 correct.'
+      : '✕ Review the article and try again.';
+    alert(`Quiz Results: ${score}/2\n\n${message}`);
+  });
+}
+</script>
+</body>
+</html>
