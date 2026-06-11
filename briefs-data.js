@@ -12,6 +12,42 @@ const SCIENCE_BRIEFS = [
     alt: "Scientific illustration of a protein scaffold forming around an atom-level enzyme active site"
   },
   {
+    title: "Organoids for Drug Discovery",
+    summary: "A Frontiers in Pharmacology editorial highlights organoids, organoid chips, AI and new approach methodologies as emerging tools for drug screening and toxicity testing.",
+    topic: "Pharmacology",
+    readTime: "4 min read",
+    date: "2025-11-19",
+    dateLabel: "Nov 19, 2025",
+    journal: "Frontiers in Pharmacology, 2025",
+    href: "organoids-for-drug-discovery-editorial.html",
+    image: "organoids-for-drug-discovery-editorial.png",
+    alt: "Editorial illustration of organoids in a multiwell plate linked to drug screening, AI analysis and organoid-chip workflows"
+  },
+  {
+    title: "Human Organoids as 3D In Vitro Platforms for Drug Discovery",
+    summary: "A Nature Reviews Drug Discovery review explains how human organoids can improve disease modelling, drug screening, toxicity testing and patient-relevant translation.",
+    topic: "Drug Discovery",
+    readTime: "6 min read",
+    date: "2025-11-12",
+    dateLabel: "Nov 12, 2025",
+    journal: "Nature Reviews Drug Discovery, 2025",
+    href: "human-organoids-drug-discovery.html",
+    image: "human-organoids-drug-discovery.png",
+    alt: "Editorial illustration of human organoids in a culture dish connected to drug screening and organoid-on-chip workflows"
+  },
+  {
+    title: "The Emerging Landscape of Engineered Bacteria Cancer Therapies",
+    summary: "A Nature Biotechnology landscape survey tracks engineered live bacterial cancer therapies across 532 papers, 64 clinical trials, and 24 company formations.",
+    topic: "Cancer Bioengineering",
+    readTime: "6 min read",
+    date: "2025-04-01",
+    dateLabel: "Apr 1, 2025",
+    journal: "Nature Biotechnology, 2025",
+    href: "engineered-bacteria-cancer-therapies.html",
+    image: "engineered-bacteria-cancer-therapies.png",
+    alt: "Editorial illustration of engineered bacteria colonizing a tumor and delivering therapeutic payloads"
+  },
+  {
     title: "Disordered Protein LAT Encodes Signal Balance in T Cell Activation",
     summary: "A single-cell mutational screen shows how the disordered adapter LAT tunes T cell signaling through distributed sequence elements.",
     topic: "Immunology",
