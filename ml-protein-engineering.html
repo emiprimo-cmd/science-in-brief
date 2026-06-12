@@ -136,7 +136,17 @@ View original paper
 <p class="text-sm text-slate-600">Should journals require code, data splits, and deployment details for ML-guided protein engineering papers in the same way they require experimental methods?</p>
 </div>
 </div>
-<a href="#" class="inline-flex w-full items-center justify-center rounded-full border border-surface-container-high bg-surface-container px-4 py-3 text-sm font-semibold text-primary transition hover:bg-slate-100">Join the conversation</a>
+<div id="reactions-container" class="mt-6 space-y-4">
+  <div class="flex gap-2">
+    <button class="like-btn flex-1 rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-primary hover:bg-slate-200 transition">👍 Like (0)</button>
+    <button class="interesting-btn flex-1 rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-primary hover:bg-slate-200 transition">💡 Interesting (0)</button>
+    <button class="not-relevant-btn flex-1 rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-primary hover:bg-slate-200 transition">❌ Not Relevant (0)</button>
+  </div>
+  <a href="https://github.com/emiprimo-cmd/science-in-brief/discussions" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center rounded-full border border-surface-container-high bg-surface-container px-4 py-3 text-sm font-semibold text-primary transition hover:bg-slate-100">
+    Join Discussion on GitHub
+    <span class="material-symbols-outlined ml-2">arrow_forward</span>
+  </a>
+</div>
 </div>
 </aside>
 </div>
@@ -174,6 +184,5 @@ if (quizButton) {
     alert(`Quiz Results: ${score}/2\n\n${message}`);
   });
 }
-</script>
-</body>
+</script><script src="reactions.js"></script></body>
 </html>

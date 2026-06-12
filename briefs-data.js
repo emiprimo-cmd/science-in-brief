@@ -12,6 +12,18 @@ const SCIENCE_BRIEFS = [
     alt: "Scientific illustration of a protein scaffold forming around an atom-level enzyme active site"
   },
   {
+    title: "The emerging landscape of engineered bacteria cancer therapies",
+    summary: "Engineered bacteria are moving from a historical curiosity toward programmable tumor-targeting medicines, but clinical efficacy remains the central test.",
+    topic: "Cancer Bioengineering",
+    readTime: "6 min read",
+    date: "2025-04-01",
+    dateLabel: "Apr 1, 2025",
+    journal: "Nature Biotechnology",
+    href: "engineered-bacteria-cancer-therapies.html",
+    image: "engineered-bacteria-cancer-therapies.png",
+    alt: "Editorial illustration of engineered bacteria colonizing a tumor and delivering therapeutic payloads"
+  },
+  {
     title: "Disordered Protein LAT Encodes Signal Balance in T Cell Activation",
     summary: "A single-cell mutational screen shows how the disordered adapter LAT tunes T cell signaling through distributed sequence elements.",
     topic: "Immunology",
