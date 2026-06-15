@@ -1,7 +1,13 @@
 // Reactions system for Science In Brief articles.
-// Stores reactions locally in the visitor's browser and links discussion to GitHub Issues.
+// Reactions are stored locally in the visitor's browser. They are not global totals.
 
-const GITHUB_DISCUSSION_BASE_URL = 'https://github.com/emiprimo-cmd/science-in-brief/issues/new';
+const GITHUB_DISCUSSION_BASE_URL = "https://github.com/emiprimo-cmd/science-in-brief/issues/new";
+
+const REACTION_OPTIONS = {
+  like: { label: "Like", icon: "\uD83D\uDC4D", selector: ".like-btn" },
+  interesting: { label: "Interesting", icon: "\uD83D\uDCA1", selector: ".interesting-btn" },
+  notRelevant: { label: "Not Relevant", icon: "\u274C", selector: ".not-relevant-btn" },
+};
 
 class ReactionsManager {
   constructor(articleId) {
@@ -11,12 +17,17 @@ class ReactionsManager {
     this.init();
   }
 
+  defaultState() {
+    return { userReaction: null };
+  }
+
   loadReactions() {
     try {
       const stored = localStorage.getItem(this.storageKey);
-      return stored ? JSON.parse(stored) : { like: 0, interesting: 0, notRelevant: 0 };
+      const parsed = stored ? JSON.parse(stored) : {};
+      return { ...this.defaultState(), ...parsed };
     } catch (_error) {
-      return { like: 0, interesting: 0, notRelevant: 0 };
+      return this.defaultState();
     }
   }
 
@@ -28,71 +39,79 @@ class ReactionsManager {
     }
   }
 
-  addReaction(type) {
-    if (type === 'like') this.reactions.like += 1;
-    if (type === 'interesting') this.reactions.interesting += 1;
-    if (type === 'notRelevant') this.reactions.notRelevant += 1;
+  setReaction(type) {
+    if (!REACTION_OPTIONS[type]) return;
+
+    if (this.reactions.userReaction === type) {
+      return;
+    }
+
+    this.reactions.userReaction = type;
     this.saveReactions();
     this.updateDisplay();
   }
 
   updateDisplay() {
-    const likeBtn = document.querySelector('.like-btn');
-    const interestingBtn = document.querySelector('.interesting-btn');
-    const notRelevantBtn = document.querySelector('.not-relevant-btn');
+    Object.entries(REACTION_OPTIONS).forEach(([type, option]) => {
+      const button = document.querySelector(option.selector);
+      if (!button) return;
 
-    if (likeBtn) likeBtn.textContent = `\uD83D\uDC4D Like (${this.reactions.like})`;
-    if (interestingBtn) interestingBtn.textContent = `\uD83D\uDCA1 Interesting (${this.reactions.interesting})`;
-    if (notRelevantBtn) notRelevantBtn.textContent = `\u274C Not Relevant (${this.reactions.notRelevant})`;
+      const isSelected = this.reactions.userReaction === type;
+      button.textContent = `${isSelected ? "\u2713 " : ""}${option.icon} ${option.label}`;
+      button.setAttribute("aria-pressed", isSelected ? "true" : "false");
+      button.setAttribute("aria-label", isSelected ? `${option.label} selected` : option.label);
+      button.classList.toggle("bg-primary", isSelected);
+      button.classList.toggle("text-on-primary", isSelected);
+      button.classList.toggle("bg-slate-100", !isSelected);
+      button.classList.toggle("text-primary", !isSelected);
+    });
+  }
+
+  addLocalNotice() {
+    const container = document.getElementById("reactions-container");
+    if (!container || container.querySelector("[data-reactions-note]")) return;
+
+    const note = document.createElement("p");
+    note.dataset.reactionsNote = "true";
+    note.className = "text-xs leading-5 text-slate-500";
+    note.textContent = "Your reaction is saved on this device only.";
+    container.insertBefore(note, container.firstChild);
   }
 
   updateDiscussionLinks() {
-    const title = document.querySelector('h1')?.textContent?.trim() || 'Science In Brief article';
+    const title = document.querySelector("h1")?.textContent?.trim() || "Science In Brief article";
     const body = `Discussion for: ${title}\n\nArticle: ${window.location.href}`;
     const discussionUrl = `${GITHUB_DISCUSSION_BASE_URL}?title=${encodeURIComponent(`[Discussion] ${title}`)}&body=${encodeURIComponent(body)}`;
 
     document.querySelectorAll('a[href*="github.com/emiprimo-cmd/science-in-brief"]').forEach((link) => {
       const linkText = link.textContent.toLowerCase();
-      if (linkText.includes('discussion') || link.href.includes('/discussions')) {
+      if (linkText.includes("discussion") || link.href.includes("/discussions")) {
         link.href = discussionUrl;
       }
     });
   }
 
   init() {
-    const likeBtn = document.querySelector('.like-btn');
-    const interestingBtn = document.querySelector('.interesting-btn');
-    const notRelevantBtn = document.querySelector('.not-relevant-btn');
+    Object.entries(REACTION_OPTIONS).forEach(([type, option]) => {
+      const button = document.querySelector(option.selector);
+      if (!button) return;
 
-    if (likeBtn) {
-      likeBtn.textContent = `\uD83D\uDC4D Like (${this.reactions.like})`;
-      likeBtn.addEventListener('click', () => {
-        this.addReaction('like');
+      button.type = "button";
+      button.addEventListener("click", () => {
+        this.setReaction(type);
       });
-    }
+    });
 
-    if (interestingBtn) {
-      interestingBtn.textContent = `\uD83D\uDCA1 Interesting (${this.reactions.interesting})`;
-      interestingBtn.addEventListener('click', () => {
-        this.addReaction('interesting');
-      });
-    }
-
-    if (notRelevantBtn) {
-      notRelevantBtn.textContent = `\u274C Not Relevant (${this.reactions.notRelevant})`;
-      notRelevantBtn.addEventListener('click', () => {
-        this.addReaction('notRelevant');
-      });
-    }
-
+    this.addLocalNotice();
+    this.updateDisplay();
     this.updateDiscussionLinks();
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const reactionsContainer = document.getElementById('reactions-container');
+document.addEventListener("DOMContentLoaded", () => {
+  const reactionsContainer = document.getElementById("reactions-container");
   if (reactionsContainer) {
-    const articleId = document.querySelector('h1')?.textContent?.trim() || 'article';
+    const articleId = document.querySelector("h1")?.textContent?.trim() || "article";
     new ReactionsManager(articleId);
   }
 });
