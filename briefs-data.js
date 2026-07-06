@@ -60,6 +60,18 @@ const SCIENCE_BRIEFS = [
     alt: "Abstract molecular network visualization"
   },
   {
+    title: "Adeno-Associated Virus (AAV) as a Vector for Gene Therapy",
+    summary: "AAV has emerged as a leading delivery platform for gene therapy because it can transport therapeutic DNA into human cells with a relatively favorable safety profile, while remaining constrained by immunity and manufacturing challenges.",
+    topic: "Gene Therapy",
+    readTime: "5 min read",
+    date: "2026-07-06",
+    dateLabel: "Jul 6, 2026",
+    journal: "BioDrugs, 2017",
+    href: "science-brief.html",
+    image: "gene-therapy-illustration.png",
+    alt: "Editorial illustration of an adeno-associated virus vector delivering DNA into a cell"
+  },
+  {
     title: "Stepwise Slime Mould Growth as a Template for Urban Design",
     summary: "A two-phase <em>Physarum</em>-inspired model separates network growth from refinement, giving designers control over cost, travel time, and vulnerability.",
     topic: "Bio-inspired Design",
